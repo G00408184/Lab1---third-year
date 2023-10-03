@@ -18,10 +18,10 @@ public class RequestController {
         return "Hello " + name;
     }
 
-   // @GetMapping("/details")
-   // public  String details(@RequestParam int age ){
-    //    return "Hello " + age ;
-    //}
+    @GetMapping("/details")
+    public  String details(@RequestParam String name,int age){
+        return "name:   age "+ name + age;
+    }
 
 }
 
